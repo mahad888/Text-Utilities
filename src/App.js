@@ -3,13 +3,13 @@ import Navbar from './Components/Navbar';
 import './App.css';
 import Textforms from './Components/Textforms';
 // import Person from "./Components/Person.js";
-import Aboutus from './Components/Aboutus';
+// import Aboutus from './Components/Aboutus';
 import { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
 
 function App() {
 
@@ -50,34 +50,46 @@ function App() {
 
 
   return (
-    <>
-    <Router>
-            <div className="App" style={Mode}>
+    // <>
+    // <Router>
+    //         <div className="App" style={Mode}>
 
-              {/* <Person
-          name = "Id : Sp21-bse-057"
-          name1 = "Id : Sp21-Bse-099"
-          ></Person>
-          */}
+    //           {/* <Person
+    //       name = "Id : Sp21-bse-057"
+    //       name1 = "Id : Sp21-Bse-099"
+    //       ></Person>
+    //       */}
 
-              <Navbar title="Text Utitlities" about="About us" mode ={modeSetter} caption = {BtnText}>  </Navbar>
+    //           <Navbar title="Text Utitlities" about="About us" mode ={modeSetter} caption = {BtnText}>  </Navbar>
               
               
-            <br></br>
+    //         <br></br>
 
-              <Routes>
+    //           <Routes>
 
 
                   
-                  <Route path="/about" element ={<Aboutus></Aboutus>}></Route>
+    //               <Route path="/about" element ={<Aboutus></Aboutus>}></Route>
 
-                    <Route path="/" element ={<Textforms heading="Enter text to analyze"></Textforms>}>
+    //                 <Route path="/" element ={<Textforms heading="Enter text to analyze"></Textforms>}>
                    
-                    </Route>
+    //                 </Route>
               
-              </Routes>
-              </div>
-      </Router></>
+    //           </Routes>
+    //           </div>
+    //   </Router></>
+
+<div className="App" style={Mode}>
+
+
+
+<Navbar title="Text Utitlities" about="About us" mode ={modeSetter} caption = {BtnText}>  </Navbar>
+<Textforms heading="Enter text to analyze"></Textforms>
+
+
+<br></br>
+</div>
+
 
       
     
