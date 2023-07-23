@@ -38,18 +38,6 @@ export default function Textforms(props) {
 
     }
 
-   
-    else if(count > 0){
-        for(let i = 0; i< count ; i++){
-            let newSent = text.trim().split(/[ ]+/);
-            newSent.pop();
-            let txt = newSent.join(" ");
-            
-            setText(txt);
-            
-    
-    }
-    }
 }
 
 
@@ -78,7 +66,7 @@ export default function Textforms(props) {
             return word;
         }
         else{
-            let word = text.split(/\s+/).length;
+            let word = text.trim().split(/\s+/).length;
             return word;
         }
        
