@@ -41,7 +41,7 @@ export default function Textforms(props) {
    
     else if(count > 0){
         for(let i = 0; i< count ; i++){
-            let newSent = text.split(/[ ]+/);
+            let newSent = text.trim().split(/[ ]+/);
             newSent.pop();
             let txt = newSent.join(" ");
             
