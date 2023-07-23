@@ -78,7 +78,7 @@ export default function Textforms(props) {
             return word;
         }
         else{
-            let word = text.trim().split(" ").length;
+            let word = text.split(/\s+/).length;
             return word;
         }
        
